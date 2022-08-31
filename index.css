@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+.container{
+ width: 100%;
+ height: 100vh;
+ background-color: #3f51b5;
+ text-align: center;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+
+}
+h1{
+    font-size: 3.5rem;
+    color: #fff;
+}
+.box{
+    /* background-color: aqua; */
+    width: 80rem;
+    
+    padding: 2rem 0;
+    /* border-radius: 10px; */
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+input{
+    width: 40rem;
+    height: 4rem;
+    padding: 1.5rem;
+    margin: 3.0rem;
+    font-size: 1.7rem;
+    text-align: center;
+    border-color: #ffe3e3;
+    border-radius: .7rem;
+    border: 3px solid #4b6587;
+    /* justify-content: center; */
+    outline: none;
+    
+}
+
+#input::placeholder{
+    color: #4b6587;
+}
+button{
+    font-size: 1.3rem;
+    padding: .8rem 2.0rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.5s;
+    /* box-sizing: border-box; */
+    border-radius: 1.5rem;
+    background-color: #ff4a4a;
+    border: .2rem solid #C9CCD5;
+    color: #fff;
+    outline: none;
+    
+}
+
+#loading{
+    display: none;
+    width: 4.0rem;
+    height: 4.0rem;
+    margin-bottom: 3.0rem;
+    border-radius: 50%;
+    border: .6rem solid #ffffff26;
+    border-top: .5rem solid #fff;
+    animation: loading 1s linear infinite;
+}
+@keyframes loading{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+.footer{
+    /* background-color:#0000FF; */
+    /* height: 2.5rem;
+    width: 12.0rem; */
+    align-items: center;
+    padding: 1.0rem;
+    margin-top: 15.0rem;
+    font-size: 1.4rem;
+    
+}
+
+
+.footer h4{
+    color: #fff;
+    text-align: center;
+    /* margin-top: 0.-7rem; */
+}
+
+@media(max-width:998px){
+    html{
+        font-size: 55%;
+        
+    }
+}
+
+@media(max-width:768px){
+    html{
+        font-size: 45%;
+    }
+}
+
+@media(max-width:500px){
+    html{
+        font-size: 45%;
+        
+    }
+}
